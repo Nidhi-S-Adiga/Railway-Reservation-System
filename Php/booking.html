@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xyz.css">
+    <title>Booking</title>
+</head>
+<body>
+    <div class="part1">
+    <h1 class="bookname">Booking Page</h1>
+    <br>
+    <h3 style=" font-size: 1.25em; font-family: 'Nanum Gothic';">Select seats</h3>
+    <div class="dirn"><b>U --</b><br><br><br><b>M --</b><br><br><br><b>L --</b><br><br><br><b>S --</b></div>
+    
+    <!-- (A) SEAT LAYOUT -->
+    <div id="layout" title="Rs100"></div>
+     
+    <!-- (B) LEGEND -->
+    <div id="legend">
+      <div class="seat"></div> <div class="txt">Available</div>
+      <div class="seat taken"></div> <div class="txt">Taken</div>
+      <div class="seat selected"></div> <div class="txt">Your Chosen Seats</div>
+    </div>
+    <div id="msgs">
+        <pre><p><b>U</b> - Upper berth    <b>M</b> - Middle berth   <b>L</b> - Lower berth    <b>S</b> - Side Lower berth</p></pre>
+    </div>
+    <!-- (C) SAVE SELECTION -->
+    
+    <script type="text/javascript" src="eg.js"></script>
+</div>
+<div class="home">
+    <a href="http://localhost:3000/home" onclick="signout()">Home</a>
+</div>
+<script>
+    function signout()
+    {
+        alert('You will be signed out and will have to login again to book!');
+    }
+</script>
+    <form id="forms">
+        <table>
+            <tbody>
+               <!-- <th><h1 class="bookname">Booking Page</h1></th>-->
+                <tr>
+                    <td> <div class="elem-group">
+                        <label for="name">Enter Full Name</label>
+                        <input type="text" id="name" name="visitor_name" placeholder="Enter Name" required>
+                    </div></td>
+                    <td>
+                        <div class="elem-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="emaiil" placeholder="Email" required>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="elem-group">
+                        <label>Age</label>
+                        <input type="number" id="age" placeholder="Enter Age" required>
+                    </div>
+                </td>
+                <td>
+                    <div class="elem-group">
+                        <label>Gender</label>
+                        <select id="train-selection" name="train_preference" required>
+                            <option value="" selected="true" disabled>Choose Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="others">Others</option>
+                        </select>
+                    </div>
+                </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="elem-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="visitor_phone" placeholder="Enter number" required>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="elem-group inlined">
+                            <label for="start-date">Date of Journey</label>
+                            <input type="text" id="start-date" name="checkin" value=" " readonly>
+                            <script>// create a new Date object
+                                var date = new Date();
+                                
+                                // increment the date by three day
+                                date.setDate(date.getDate() + 3);
+                                
+                                // format the date as dd-mm-yyyy
+                                var day = date.getDate();
+                                var month = date.getMonth() + 1; // month is zero-based
+                                var year = date.getFullYear();
+                                var formattedDate = day + "-" + month + "-" + year;
+                                
+                                // set the value of the date input field
+                                document.getElementById("start-date").value = formattedDate;</script>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="elem-group">
+                            <label for="train-selection">Select Source Location</label>
+                            <select id="train-selection" name="train_preference" required>
+                                <option value="" selected="true" disabled>Choose a location</option>
+                                <option value="l1">Bangalore</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="elem-group">
+                            <label for="train-selection">Select Destination Location</label>
+                            <select id="train-selection" name="train_preference" required>
+                                <option value="" selected="true" disabled>Choose a location</option>
+                                <option value="l1">Rishikesh</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div class="elem-group">
+                        <label for="train-selection">Select Train</label>
+                        <select id="train-selection" name="train_preference" required>
+                            <option value="" selected="true" disabled>Choose a Train from the list</option>
+                            <option value="t1">Enigma Express</option>
+                        </select>
+                    </div>
+                    </td>
+
+                    <td>
+                        <div class="elem-group">
+                            <label for="train-selection">Select Slot</label>
+                            <select id="time-selection" name="time_preference" required>
+                                <option value="" selected="true" disabled>Select Time</option>
+                                <option value="08:45 am">8:45 am</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <button id="save" onclick="reserve.save();printTicket()" disabled>Reserve Seats</button>
+    <script>
+        const form = document.querySelector('form');
+const button = document.querySelector('#save');
+const inputs = document.querySelectorAll('input');
+
+function checkInputs() {
+  let isFilled = true;
+  inputs.forEach(input => {
+    if (input.value === '') {
+      isFilled = false;
+    }
+  });
+  if (isFilled) {
+    button.removeAttribute('disabled');
+  } else {
+    button.setAttribute('disabled', 'true');
+  }
+}
+
+inputs.forEach(input => {
+  input.addEventListener('input', checkInputs);
+});
+
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  // Handle form submission here
+});
+    </script>
+    </form>
+
+
+</body>
+</html>

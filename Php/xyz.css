@@ -1,0 +1,186 @@
+.head{
+  height:40px;
+}
+.dirn{
+  float:left;
+  padding-top: 20px;
+  width: 53px;
+  font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+}
+.right{
+float:left;
+padding-top: 50px;
+font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+}
+.left{
+float:left;
+padding-top: 150px;
+font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+
+}
+/* (A) SEAT & "COLOR CODE" */
+.seat {
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    background: #f1f1f1;
+  }
+  .taken,.saved { background: #df0000; color: #fff; }
+  .selected { background: #87ff96; }
+   
+  /* (B) SEATS LAYOUT */
+  #layout {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+   
+  /* (C) LEGEND */
+  #legend {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 30px auto ;
+  }
+  #legend .txt {
+    display: flex;
+    align-items: center;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    float: left;
+  }
+   
+  /* (D) SAVE */
+  #save {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: 0;
+    color: #fff;
+    background: rgb(7, 15, 134);
+  }
+  .part1{
+    float: left;
+  }
+  body {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+   background-position: center;
+   background-size: cover;
+   
+    }
+    
+    .bookname{
+        margin: 10px;
+        width: 250px;
+        background-color:  rgb(7, 15, 134);
+        color:white;
+        text-align: center;
+        
+    }
+    
+    div.elem-group {
+    margin: 5px 20px;
+    }
+    
+    div.elem-group.inlined {
+    width: 69%;
+    display: inline-block;
+    margin-left: 1%;
+    }
+    
+    label {
+    display: block;
+    font-family: 'Nanum Gothic';
+    padding-bottom: 8px;
+    font-size: 1.20em;
+    }
+    
+    input, select, textarea {
+    border-radius: 2px;
+    border: 2px solid #777;
+    box-sizing: border-box;
+    font-size: 1.20em;
+    font-family: 'Nanum Gothic';
+    width: 100%;
+    padding: 10px;
+    }
+    
+    div.elem-group.inlined input {
+    width: 95%;
+    display: inline-block;
+    }
+    
+    textarea {
+    height: 250px;
+    }
+    
+    hr {
+    border: 1px dotted #ccc;
+    }
+    
+    button {
+    height: 50px;
+    background: rgb(7, 15, 134);
+    border: none;
+    color: white;
+    font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+    border-radius: 4px;
+    cursor: pointer;
+    }
+    
+    button:hover {
+    border: 2px solid black;
+    }
+    table{
+        background-color: white;
+    }
+    tr:nth-child(even) {
+            background-color: #f2f2f2;
+          }
+          form{
+            float: right;
+            width: 40%;
+            padding-top: 100px;
+            padding-right: 1px;
+          }
+pre{
+  font-size: 1.25em;
+    font-family: 'Nanum Gothic';
+}
+
+.inform{
+  color: #df0000;
+  animation-name: move;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count: 2;
+  position: relative;
+}
+   
+@keyframes move
+{
+    from {left:0%;top:0px}
+    to {left:70%;top:0px}
+}
+
+.home a{
+  color: #fff;
+  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  border-radius: 4px;
+  background:rgba(0,0,50,0.8);
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  float: right;
+}
