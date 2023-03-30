@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup_in.css">
+    <script src="validation.js"></script>
+    <script src="https://kit.fontawesome.com/5b7bcd6d3b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="formbox">
+            <h1 id="title">Sign Up</h1>
+            <form action="/signup" name="myForm" onclick="return validateForm()" method="post">
+                <div class="input-group">
+                    
+                    <div class="input-field" id="name">
+                        <i class="fa-sharp fa-solid fa-user"></i>
+                        <input type="text" placeholder="*UserName" name="username" required>
+                        <span class="formerror"></span>
+                    </div>
+
+                    <div class="input-field" id="password">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="*Password" name="password" required>
+                        <span class="formerror"></span>
+                    </div>
+
+                    <div class="input-field" id="confirm_password">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" placeholder="*Confirm Password" name="confirm_password" required>
+                        <span class="formerror"></span>
+                    </div>
+
+                    <div class="input-field" id="email">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="*Email" name="email" required>
+                    </div>
+
+                    <div class="input-field" id="phone">
+                        <i class="fa-solid fa-mobile"></i>
+                        <input type="number" placeholder="*Mobile number" name="mobile" required>
+                        <div class="formerror"></div>
+                    </div>
+
+                    <label for=""><h5 align="left">*Date of birth:</h5></label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-calendar"></i>
+                        <input type="date" placeholder="Date of Birth" name="dob" required>
+                    </div>
+
+                    <div class="input-field" id="gf">
+                        <i class="fa-solid fa-mars-and-venus"></i>
+                        <select name="gender" required>
+                            <option value="">-------------------------Choose Gender-----------------------------</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="trans">Others</option>
+                          </select>
+                    </div>
+                    
+                    <div class="input-field">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" placeholder="*Address" name="address" required>
+                    </div><br>
+                    <h6>* fields indicate that it is a compulsory field.</h6>
+                    <br>
+                    <div class="submit">
+                        <button type="submit" name="submit" onclick="inform()">Submit</button>
+                    </div>
+                    <br>
+                    
+                    
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>

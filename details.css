@@ -1,0 +1,30 @@
+body 
+{
+	margin: 10px;
+	padding: 0;
+	background-color: rgb(151, 151, 172);
+}
+.title
+{
+          font-size: 60px;
+          font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          text-align: center;
+
+}
+.train
+{
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	height: 100%;
+          font-size: x-large;
+}
+.p
+{
+          font-size: 20px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.p1
+{
+          font-size: 25px;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          color: rgb(153, 51, 51);
+}

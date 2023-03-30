@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body,html{height: 100%;}
+.container{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0,0,50,0.8),rgba(0,0,50,0.8)), url(train3.jpg);
+   background-position: center;
+   background-size: cover;
+   position: relative;
+}
+
+.formbox{
+    width:90%;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 5px 25px 10px;
+    text-align: center;
+}
+
+.formbox h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #3c00a0;
+    position: relative;
+}
+
+h6{
+    color: #3c00a0;
+}
+
+select{
+    float: right;
+    width:100%;
+    height: 20px;
+}
+
+i{
+    padding-right: 25px;
+}
+
+.input-field,select{
+    background-color: #eaeaea;
+    margin: 15px 0;
+    border-radius: 3px;
+    display: flex;
+    align-items: center; 
+    max-height: 55px;
+    overflow: hidden;
+    
+}
+
+.formbox h1::after{
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #3c00a0;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border:0;
+    outline: 0;
+    padding: 11px;
+}
+
+.input-field i,.input-field input{
+    margin-left: 15px;
+    color: grey;
+}
+
+.input-field select{color: grey;}
+
+.submit button{
+    background-color: #3c00a0;
+    color: #fff;
+    height: 40px;
+    border: collapse;
+    border-radius: 20px;
+    margin-left: 3%;
+    width: 50%;
+    padding: 1%;
+}
+
+

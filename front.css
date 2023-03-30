@@ -1,0 +1,321 @@
+body 
+{
+	margin: 0;
+	padding: 0;
+	font-family: montserrat;
+	height: 100%;
+}
+html{
+	font-size: 16px;
+}
+nav
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 50px;
+	color: #fff;
+	background-color: white;
+}
+.header{
+	height: 20%;
+	float: left;
+	width: 100%;
+}
+img {
+	height: 60px;
+	width: 60px;
+	float:left;
+}
+        
+
+.image{
+          background-image: url("train3.jpg");
+	
+	height: 400px;
+	width: 100%;
+	float: left;
+	background-size: cover;
+	background-position: center;
+	padding: 20px 10px 135px;
+	
+}	
+.move{
+	color: hsl(180, 3%, 18%);
+	text-align:left;
+	font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: xx-large;
+	font-style: italic;
+	padding: 10px;
+	animation:example 12s alternate;
+	animation-iteration-count: 2;
+	position: relative;
+}
+.menu ul li 
+{
+	display: inline-block;
+	margin: 0 15px;
+
+}
+.menu ul li a ,.btn button
+ {
+          color: #fff;
+	cursor: pointer;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding: 12px 30px;
+	border-radius: 4px;
+	background:rgba(0,0,50,0.8);
+	border: none;
+  text-decoration: none;
+}
+.btn{
+    cursor: pointer;
+    float: right;
+
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  
+  
+  .container {
+    padding: 16px;
+    color:black;
+  }
+  
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #080808;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: rgb(3, 3, 3);
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+
+@keyframes example{
+	0% {left:0px}
+	100%{left:300px}
+}
+.shead1{
+	
+	float: left;
+	width:50%;   
+	height:100%;
+	color: rgb(234, 234, 238);
+	background-color: rgb(10, 18, 82);
+	text-align: left;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size:large;
+}
+
+.content{
+	padding-left: 20px;
+}
+
+
+.shead2{
+	float:right;
+	width:50%;  
+	height:100%;
+	color: rgb(234, 234, 238);
+	background :  rgb(10, 18, 82);
+	text-align: left;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size:large;
+}
+.details1{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	height:100%;	
+}
+.details1{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section{
+	width: 100%;
+	height: 100vh;
+	background-color: #1a1919;
+	display: flex;
+	align-items: center;
+	font-family: 'Roboto',sans-serif;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	justify-content: center;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	
+}
+
+.faq{
+	width: 80%;
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	color: #000;
+}
+
+*,*::after,*::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+.q-item{
+	background-color:rgb(10, 18, 82) ;
+	border-radius: .4rem;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	box-shadow: (.5rem 2px .5rem #26014b);
+}
+
+.q-link{
+	font-size: 1.6rem;
+	color: rgba(255,255,255,.8);
+	text-decoration: none;
+	background-color: rgb(10, 18, 82);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem 0;
+}
+
+.q-link{
+	color: #fbf7ff;
+	padding: .5rem;
+}
+
+.q .fa-minus{
+	display: none;
+}
+
+.qa{
+	max-height: 0;
+	overflow: hidden;
+	position: relative;
+	background-color: rgb(24, 30, 75);
+	transition: max-height 650ms;
+}
+
+.qa::before{
+	content: "";
+	position: absolute;
+	width: .6rem;
+	height: 90%;
+	background-color: #322d58;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+
+}
+
+.qa p{
+	color: rgba(252, 250, 250, 0.6);
+	font-size: 1.4rem;
+	padding: 2rem;
+}
+
+.q-item:target .qa{
+	max-height: 20rem;
+}
+
+.q-item:target .q-link .fa-plus{
+	display: none;
+}
+
+.q-item:target .q-link .fa-minus{
+	display: block;
+}
+
+.faq h1{
+	font-family: Goudy Stout;
+	text-align: center;
+	font-size: x-large;
+	color: #f7f5e9;
+	
+}
+
+.end{
+	background-color: #1d1b1b;
+	width: 100%;
+	height:300px;
+	font-size:large;
+}
+.end p{
+	margin: 20px;
+	float: left;
+	color:white;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.icons{
+	padding-left: 1000px;
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
