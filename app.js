@@ -79,7 +79,7 @@ app.post('/login', async (req, res) => {
   } else {
     try {
       if (await bcrypt.compare(req.body.password, user.password)) {
-        res.send("<script>alert('Login Successful!');window.location.href = 'http://localhost:4000/Php/booking.html'</script>");
+        res.send("<script>alert('Login Successful!');window.location.href = 'http://localhost:4000/booking.html'</script>");
       } else {
         res.send("<script>alert('Login Unsuccesful!');window.location.href = '/login'</script>");
       }
@@ -94,7 +94,7 @@ app.get('/home', (req, res) => {
   res.sendFile(__dirname+"/front.html")
 });
 
-// Start server
+// Start server at port 3000
 app.listen(3000, () => {
   console.log('Server started on port 3000');
 });
