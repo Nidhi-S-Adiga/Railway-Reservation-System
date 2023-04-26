@@ -108,7 +108,7 @@ The following are the steps of implementation which was adopted for this project
 
 3. php -S localhost: 4000
 
-Run the first command in one terminal window and the second and third commands in an another terminal window.
+Run the first command in one terminal window and the second and third commands in another terminal window.
 
 
 
