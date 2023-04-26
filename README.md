@@ -59,6 +59,7 @@ The railway reservation project is developed using several tools and technologie
 
 The following are the steps of implementation which was adopted for this project:
 1)	Front-end: 
+
 •	Produce the HTML and CSS files for the booking, signup, and login pages.
 
 •	For the login and signup pages, use JavaScript form validation to make sure that all required fields are correctly filled out.
@@ -68,6 +69,7 @@ The following are the steps of implementation which was adopted for this project
 •	To create and download the PDF ticket confirmation, use JavaScript.
 
 2)	Back-end:
+
 •	Create a server and manage HTTP requests using Node.js and Express.js.
 
 •	Store user and reservation information in MongoDB.
