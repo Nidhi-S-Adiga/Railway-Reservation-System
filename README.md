@@ -1,7 +1,5 @@
 # Railway-Reservation-System
 
-
-# RAILWAY RESERVATION SYSTEM
 The railway reservation project is a web-based application developed using HTML, CSS, JavaScript, Node.js and PHP. The purpose of the project is to provide a platform for users to make reservations for train tickets online. The application allows users to choose the source and destination cities, select the train, and make a reservation by providing the necessary details.
 
 The railway reservation project offers features such as user registration and login, booking and seat availability status, fare calculation and ticket confirmation.
