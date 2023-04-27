@@ -6,6 +6,7 @@ The railway reservation project offers features such as user registration and lo
 	
 Overall, the railway reservation project provides a convenient and efficient way for users to book train tickets online, saving time and effort.
 
+This is a part of our WAD (Web Application Development) project during 3rd Sem. 
 
 
 
